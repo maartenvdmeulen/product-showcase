@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -25,6 +27,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/dotenv',
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
@@ -32,7 +35,15 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/axios'],
+
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/v1/': { target: 'https://api.dekamarkt.nl/', pathRewrite: {'^/v1/': ''}, changeOrigin: true }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
