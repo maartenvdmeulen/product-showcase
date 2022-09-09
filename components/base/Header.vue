@@ -1,8 +1,8 @@
 <template>
     <div class="h-16 bg-yellow-600 flex text-center text-white">
-        <img src="~/assets/logo.svg" alt="logo" class="p-3">
-        <NuxtLink to="/" class="website-name pr-4 m-auto text-center text-lg font-normal">ProcuctShowcase</NuxtLink>
-        <nav class="m-auto space-x-4">
+        <img src="~/assets/logo.svg" alt="logo" class="p-2 md:p-4 h-22 m-auto">
+        <NuxtLink to="/" class="website-name pr-2 sm:pr-4 m-auto text-center text-md md:text-lg font-normal">ProcuctShowcase</NuxtLink>
+        <nav class="m-auto space-x-4 hidden sm:block">
             <NuxtLink to="/" class="hover:text-blue-300">Products</NuxtLink> 
             <NuxtLink to="/product/19283" class="hover:text-blue-300">Product 1</NuxtLink> 
         </nav>
