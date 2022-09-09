@@ -34,9 +34,9 @@
                 </div>
             </NuxtLink>
             <div class="text-xl pt-3">
-                <button @click="add" class="hover:text-blue-400 w-7 bg-gray-400 rounded-md">+</button>
-                {{ count }}
                 <button @click="min" class="hover:text-blue-400 w-7 bg-gray-400 rounded-md">-</button>
+                {{ count }}
+                <button @click="add" class="hover:text-blue-400 w-7 bg-gray-400 rounded-md">+</button>
             </div>
         </div>
     </div>
