@@ -1,7 +1,7 @@
 <template>
   <div class="w-11/12 xl:w-8/12 py-4 m-auto transition-all duration-500">
     <div v-if="!productExists">
-      <nuxt-link to="/">Product with id {{ this.$route.params.productId }} not found<nuxt-link>
+      <nuxt-link to="/">Product with id {{ this.$route.params.productId }} not found</nuxt-link>
     </div>
     <FullProductCard v-else :product="product"/>
   </div>
