@@ -1,5 +1,7 @@
 # product-showcase
 
+Test Nuxt project made for a business opportunity.
+
 ## Build Setup
 
 ```bash
@@ -25,3 +27,13 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Website screenshots
+
+*Homepage*
+
+![image](docs/products-overview.png)
+
+*Product details - /product/19283*
+
+![image](docs/product.png)
