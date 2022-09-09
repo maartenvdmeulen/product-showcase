@@ -25,6 +25,8 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  target: 'static',
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/dotenv',
@@ -32,10 +34,17 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
+  image: {
+    domains: ['localhost'],
+  },
 
   axios: {
     proxy: true
