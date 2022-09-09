@@ -1,6 +1,6 @@
 # product-showcase
 
-Test Nuxt project made for a business opportunity.
+Test project using [Nuxt 2](https://nuxtjs.org/) with [Tailwind CSS](https://tailwindcss.com/), made for a business opportunity.
 
 ## Build Setup
 
